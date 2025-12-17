@@ -79,27 +79,6 @@ As such, those are in use within the default layer at this time.*/
 
             label = "FUN_BASE";
         };
-
-        doble_tab_enter: doble_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TAB &kp TAB &kp ENTER>;
-            label = "DOBLE_TAB";
-        };
-
-        ctrl_v_enter: ctrl_v_enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(V) &kp ENTER>;
-            label = "CTRL_V_ENTER";
-        };
-
-        vent_2_enter: vent_2_enter {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(NUMBER_2) &kp ENTER>;
-            label = "VENT_2_ENTER";
-        };
     };
 
     keymap {
@@ -168,11 +147,11 @@ As such, those are in use within the default layer at this time.*/
 
         Acentos {
             bindings = <
-&trans          &trans            &kp SLASH         &kp DOT           &kp SLASH         &trans                        &trans  &trans  &kp GRAVE   &kp RA(COMMA)  &trans  &trans
-&trans          &trans            &trans            &kp SEMICOLON     &trans            &trans                        &trans  &trans  &kp RSHIFT  &to 1          &to 2   &trans
-&kp LEFT_SHIFT  &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)                    &trans  &trans  &trans      &trans         &trans  &kp RIGHT_SHIFT
-&trans          &trans            &trans            &trans            &kp RA(NUMBER_6)  &trans      &trans    &trans  &trans  &trans  &trans      &trans         &trans  &trans
-&trans          &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans      &trans         &trans  &trans
+&trans  &trans            &kp SLASH         &kp DOT           &kp SLASH         &trans                        &trans  &trans  &kp GRAVE   &kp RA(COMMA)  &trans  &trans
+&trans  &trans            &trans            &kp SEMICOLON     &trans            &trans                        &trans  &trans  &kp RSHIFT  &to 1          &to 2   &trans
+&trans  &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)                    &trans  &trans  &trans      &trans         &trans  &trans
+&trans  &trans            &trans            &trans            &kp RA(NUMBER_6)  &trans      &trans    &trans  &trans  &trans  &trans      &trans         &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans      &trans         &trans  &trans
             >;
         };
 
