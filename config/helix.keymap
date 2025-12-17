@@ -139,7 +139,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks045 {
+        Heliks046 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -148,11 +148,11 @@ As such, those are in use within the default layer at this time.*/
             // | ADJUST |  ESC   |  ALT   |  LGUI  | EISUU  | LOWER  | SPACE  |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp ESC         &kp N6        &kp N4      &kp N2     &kp N0  &kp N8                                       &kp N9     &kp N1  &kp N3     &kp N5  &kp N7         &kp DEL
-&fun_base       &kp X         &kp B       &kp P      &kp H   &kp Y                                        &kp J      &sl 4   &kp R      &kp C   &kp M          &fun_base
-&kp LEFT_SHIFT  &kp I         &kp A       &kp E      &kp O   &kp U                                        &kp D      &kp T   &kp S      &kp N   &kp L          &kp RIGHT_SHIFT
-&sim_Lshift     &kp W         &kp PERIOD  &kp COMMA  &kp F   &kp K      &kp C_VOL_DN     &kp C_VOLUME_UP  &kp Z      &kp Q   &kp V      &kp G   &kp SEMICOLON  &sim_Rshift
-&mo 10          &kp LEFT_ALT  &mo 8       &mom_base  &mo 6   &kp SPACE  &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 6   &mom_base  &mo 8   &kp TAB        &mo 10
+&kp ESC         &kp N6            &kp N4      &kp N2     &kp N0  &kp N8                                       &kp N9     &kp N1  &kp N3     &kp N5  &kp N7             &kp DEL
+&fun_base       &kp X             &kp B       &kp P      &kp H   &kp Y                                        &kp J      &sl 4   &kp R      &kp C   &kp M              &fun_base
+&kp LEFT_SHIFT  &kp I             &kp A       &kp E      &kp O   &kp U                                        &kp D      &kp T   &kp S      &kp N   &kp L              &kp RIGHT_SHIFT
+&kp LEFT_ALT    &kp W             &kp PERIOD  &kp COMMA  &kp F   &kp K      &kp C_VOL_DN     &kp C_VOLUME_UP  &kp Z      &kp Q   &kp V      &kp G   &kp SEMICOLON      &kp TAB
+&mo 10          &kp LEFT_CONTROL  &mo 8       &mom_base  &mo 6   &kp SPACE  &kp BACKSPACE    &kp ENTER        &kp SPACE  &mo 6   &mom_base  &mo 8   &kp RIGHT_CONTROL  &mo 10
             >;
         };
 
@@ -242,11 +242,11 @@ As such, those are in use within the default layer at this time.*/
 
         Control {
             bindings = <
-&kp RC(ESC)  &kp RC(N6)      &kp RC(N4)  &kp RC(N2)        &kp RC(N0)    &kp RC(N8)                                         &kp LC(N9)     &kp LC(N1)    &kp LC(N3)         &kp LC(N5)  &kp LC(N7)       &kp LC(DEL)
-&trans       &kp RC(I)       &kp RC(S)   &kp RC(N)         &kp RC(K)     &kp RC(Y)                                          &kp LC(J)      &kp LC(R)     &kp LC(Z)          &kp LG(V)   &kp LC(M)        &trans
-&trans       &kp RC(A)       &kp RC(E)   &kp RC(C)         &kp RC(X)     &kp RC(U)                                          &kp LC(D)      &kp LC(L)     &kp LC(V)          &kp LC(T)   &kp LC(B)        &trans
-&trans       &kp RC(DOT)     &kp RC(O)   &kp RC(W)         &kp RC(F)     &kp RC(Q)      &trans               &trans         &kp LC(P)      &kp LC(F)     &kp LC(G)          &kp LC(H)   &kp LC(SEMI)     &trans
-&trans       &kp LEFT_SHIFT  &kp TAB     &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RC(SPACE)  &kp RC(BACKSPACE)    &kp LC(ENTER)  &kp LC(SPACE)  &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp TAB     &kp RIGHT_SHIFT  &trans
+&kp RC(ESC)  &kp RC(N6)        &kp RC(N4)  &kp RC(N2)      &kp RC(N0)    &kp RC(N8)                                         &kp LC(N9)     &kp LC(N1)    &kp LC(N3)       &kp LC(N5)  &kp LC(N7)         &kp LC(DEL)
+&trans       &kp RC(I)         &kp RC(S)   &kp RC(N)       &kp RC(K)     &kp RC(Y)                                          &kp LC(J)      &kp LC(R)     &kp LC(Z)        &kp LG(V)   &kp LC(M)          &trans
+&trans       &kp RC(A)         &kp RC(E)   &kp RC(C)       &kp RC(X)     &kp RC(U)                                          &kp LC(D)      &kp LC(L)     &kp LC(V)        &kp LC(T)   &kp LC(B)          &trans
+&trans       &kp RC(DOT)       &kp RC(O)   &kp RC(W)       &kp RC(F)     &kp RC(Q)      &trans               &trans         &kp LC(P)      &kp LC(F)     &kp LC(G)        &kp LC(H)   &kp LC(SEMI)       &trans
+&trans       &kp LEFT_CONTROL  &kp TAB     &kp LEFT_SHIFT  &kp LEFT_ALT  &kp RC(SPACE)  &kp RC(BACKSPACE)    &kp LC(ENTER)  &kp LC(SPACE)  &kp LEFT_ALT  &kp RIGHT_SHIFT  &kp TAB     &kp RIGHT_CONTROL  &trans
             >;
         };
 
