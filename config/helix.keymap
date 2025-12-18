@@ -84,7 +84,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Heliks047 {
+        Heliks048 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -121,7 +121,7 @@ As such, those are in use within the default layer at this time.*/
         Navegacion {
             bindings = <
 &trans  &trans        &trans            &trans         &trans             &trans                                          &trans              &trans     &trans           &trans     &trans  &trans
-&trans  &kp RC(HOME)  &kp PAGE_UP       &kp RS(TAB)    &kp PAGE_DOWN      &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC    &none   &trans
+&trans  &kp RC(HOME)  &kp PAGE_UP       &kp RS(TAB)    &kp PAGE_DOWN      &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &sl 4      &mo 5            &kp ESC    &none   &trans
 &trans  &kp HOME      &kp RS(RC(LEFT))  &kp TAB        &kp RC(TAB)        &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2     &none   &trans
 &trans  &none         &kp RC(PAGE_UP)   &kp PAGE_DOWN  &kp RC(PAGE_DOWN)  &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp LG(V)  &none   &trans
 &trans  &trans        &trans            &trans         &trans             &trans            &trans          &trans        &trans              &trans     &trans           &trans     &trans  &trans
