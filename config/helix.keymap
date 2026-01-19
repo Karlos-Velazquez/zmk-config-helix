@@ -139,7 +139,7 @@ As such, those are in use within the default layer at this time.*/
     keymap {
         compatible = "zmk,keymap";
 
-        Helix_050 {
+        Helix_051 {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
             // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
@@ -165,21 +165,21 @@ As such, those are in use within the default layer at this time.*/
             // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
 
             bindings = <
-&kp ESC      &kp N6        &kp N4        &kp N2        &kp N0         &kp N8                                          &kp N9              &kp N1     &kp N3           &kp N5     &kp N7   &kp DEL
-&trans       &kp RC(HOME)  &kp RC(LEFT)  &kp UP_ARROW  &kp RC(RIGHT)  &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC    &none    &trans
-&sft_y_base  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2     &none    &sft_y_base
-&trans       &kp LEFT_ALT  &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp LG(V)  &kp TAB  &trans
-&trans       &trans        &trans        &mom_mov      &trans         &trans            &trans          &trans        &trans              &trans     &mom_mov         &trans     &trans   &trans
+&kp ESC      &kp N6        &kp N4        &kp N2        &kp N0         &kp N8                                          &kp N9              &kp N1     &kp N3           &kp N5     &kp N7            &kp DEL
+&trans       &kp RC(HOME)  &kp RC(LEFT)  &kp UP_ARROW  &kp RC(RIGHT)  &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC    &none             &trans
+&sft_y_base  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2     &kp LEFT_CONTROL  &sft_y_base
+&trans       &kp RC(TAB)   &kp RS(TAB)   &kp RC(DOWN)  &kp TAB        &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp LG(V)  &kp LC(TAB)       &trans
+&trans       &trans        &trans        &mom_mov      &trans         &trans            &trans          &trans        &trans              &trans     &mom_mov         &trans     &trans            &trans
             >;
         };
 
         Navegacion {
             bindings = <
-&kp ESC  &kp N6        &kp N4            &kp N2         &kp N0             &kp N8                                          &kp N9              &kp N1     &kp N3           &kp N5     &kp N7   &kp DEL
-&trans   &kp RC(HOME)  &kp PAGE_UP       &kp RS(TAB)    &kp PAGE_DOWN      &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC    &none    &trans
-&trans   &kp HOME      &kp RS(RC(LEFT))  &kp TAB        &kp RC(TAB)        &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2     &none    &trans
-&trans   &kp LEFT_ALT  &kp RC(PAGE_UP)   &kp PAGE_DOWN  &kp RC(PAGE_DOWN)  &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp LG(V)  &kp TAB  &trans
-&trans   &trans        &trans            &trans         &trans             &trans            &trans          &trans        &trans              &trans     &trans           &trans     &trans   &trans
+&kp ESC  &kp N6        &kp N4            &kp N2         &kp N0             &kp N8                                          &kp N9              &kp N1     &kp N3           &kp N5     &kp N7            &kp DEL
+&trans   &kp RC(HOME)  &kp PAGE_UP       &kp RS(TAB)    &kp PAGE_DOWN      &kp RC(UP_ARROW)                                &kp RS(RCTRL)       &mo 4      &mo 5            &kp ESC    &none             &trans
+&trans   &kp HOME      &kp RS(RC(LEFT))  &kp TAB        &kp RC(TAB)        &kp END                                         &kp RCTRL           &kp LC(C)  &kp RIGHT_SHIFT  &kp F2     &kp LEFT_CONTROL  &trans
+&trans   &kp RC(TAB)   &kp RC(PAGE_UP)   &kp PAGE_DOWN  &kp RC(PAGE_DOWN)  &kp RC(END)       &kp C_VOL_DN    &kp C_VOL_UP  &kp K_CONTEXT_MENU  &kp LC(X)  &kp LC(V)        &kp LG(V)  &kp LC(TAB)       &trans
+&trans   &trans        &trans            &trans         &trans             &trans            &trans          &trans        &trans              &trans     &trans           &trans     &trans            &trans
             >;
         };
 
@@ -242,31 +242,31 @@ As such, those are in use within the default layer at this time.*/
 
         Control {
             bindings = <
-&kp RC(ESC)  &kp RC(N6)      &kp RC(N4)  &kp RC(N2)        &kp RC(N0)    &kp RC(N8)                                         &kp LC(N9)     &kp LC(N1)    &kp LC(N3)         &kp LC(N5)  &kp LC(N7)       &kp LC(DEL)
-&trans       &kp RC(Q)       &kp RC(S)   &kp RC(N)         &kp RC(K)     &kp RC(Y)                                          &kp LC(J)      &kp LC(R)     &kp LC(Z)          &kp LC(P)   &kp LC(M)        &trans
-&trans       &kp RC(A)       &kp RC(E)   &kp RC(C)         &kp RC(X)     &kp RC(U)                                          &kp LC(D)      &kp LC(L)     &kp LC(V)          &kp LC(T)   &kp LC(I)        &trans
-&trans       &kp RC(DOT)     &kp RC(A)   &kp RC(W)         &kp RC(F)     &kp RC(COMMA)  &trans               &trans         &kp LC(O)      &kp LC(B)     &kp LC(G)          &kp LC(H)   &kp LC(SEMI)     &trans
-&trans       &kp LEFT_SHIFT  &kp TAB     &kp LEFT_CONTROL  &kp LEFT_ALT  &kp RC(SPACE)  &kp RC(BACKSPACE)    &kp LC(ENTER)  &kp LC(SPACE)  &kp LEFT_ALT  &kp RIGHT_CONTROL  &kp TAB     &kp RIGHT_SHIFT  &trans
+&kp RC(ESC)  &kp RC(N6)        &kp RC(N4)  &kp RC(N2)      &kp RC(N0)    &kp RC(N8)                                         &kp LC(N9)     &kp LC(N1)    &kp LC(N3)       &kp LC(N5)  &kp LC(N7)         &kp LC(DEL)
+&trans       &kp RC(Q)         &kp RC(S)   &kp RC(N)       &kp RC(K)     &kp RC(Y)                                          &kp LC(J)      &kp LC(R)     &kp LC(Z)        &kp LC(P)   &kp LC(M)          &trans
+&trans       &kp RC(A)         &kp RC(E)   &kp RC(C)       &kp RC(X)     &kp RC(U)                                          &kp LC(D)      &kp LC(L)     &kp LC(V)        &kp LC(T)   &kp LC(I)          &trans
+&trans       &kp RC(DOT)       &kp RC(A)   &kp RC(W)       &kp RC(F)     &kp RC(COMMA)  &trans               &trans         &kp LC(O)      &kp LC(B)     &kp LC(G)        &kp LC(H)   &kp LC(SEMI)       &trans
+&trans       &kp LEFT_CONTROL  &kp TAB     &kp LEFT_SHIFT  &kp LEFT_ALT  &kp RC(SPACE)  &kp RC(BACKSPACE)    &kp LC(ENTER)  &kp LC(SPACE)  &kp LEFT_ALT  &kp RIGHT_SHIFT  &kp TAB     &kp RIGHT_CONTROL  &trans
             >;
         };
 
         Alt_Funcion {
             bindings = <
-&kp F11   &kp F7     &kp F5        &kp F3     &kp F1     &kp F9                       &kp F8     &kp F10    &kp F2     &kp F4        &kp F6     &kp F12
-&kp CAPS  &kp LA(X)  &kp LA(B)     &kp LA(P)  &kp LA(H)  &kp LA(Y)                    &kp LA(J)  &kp LA(J)  &kp LA(R)  &kp LA(C)     &kp LA(M)  &kp CAPSLOCK
-&trans    &kp LA(I)  &kp LA(A)     &kp LA(E)  &kp LA(O)  &kp LA(U)                    &kp LA(D)  &kp LA(T)  &kp LA(S)  &kp LA(N)     &kp LA(L)  &trans
-&trans    &kp LA(W)  &kp LA(W)     &kp LA(Q)  &kp LA(F)  &kp LA(K)  &trans    &trans  &kp LA(Z)  &kp LA(Q)  &kp LA(V)  &kp LA(G)     &none      &trans
-&trans    &trans     &kp LEFT_ALT  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &kp LEFT_ALT  &trans     &trans
+&kp F11  &kp F7     &kp F5        &kp F3     &kp F1     &kp F9                       &kp F8     &kp F10    &kp F2     &kp F4        &kp F6     &kp F12
+&kp TAB  &kp LA(X)  &kp LA(B)     &kp LA(P)  &kp LA(H)  &kp LA(Y)                    &kp LA(J)  &kp LA(J)  &kp LA(R)  &kp LA(C)     &kp LA(M)  &kp TAB
+&trans   &kp LA(I)  &kp LA(A)     &kp LA(E)  &kp LA(O)  &kp LA(U)                    &kp LA(D)  &kp LA(T)  &kp LA(S)  &kp LA(N)     &kp LA(L)  &trans
+&trans   &kp LA(W)  &kp LA(W)     &kp LA(Q)  &kp LA(F)  &kp LA(K)  &trans    &trans  &kp LA(Z)  &kp LA(Q)  &kp LA(V)  &kp LA(G)     &none      &trans
+&trans   &trans     &kp LEFT_ALT  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &kp LEFT_ALT  &trans     &trans
             >;
         };
 
         Ventanas {
             bindings = <
-&trans        &kp LG(N7)  &kp LG(N6)          &kp LG(N5)          &kp LG(N4)     &kp LG(N0)                       &kp LG(N9)     &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp LG(N8)  &trans
-&trans        &trans      &trans              &kp LG(UP_ARROW)    &trans         &trans                           &trans         &trans      &kp LG(L)   &trans      &trans      &trans
-&trans        &trans      &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &trans                           &trans         &trans      &kp LG(V)   &trans      &trans      &trans
-&trans        &trans      &trans              &trans              &trans         &trans         &trans    &trans  &trans         &trans      &trans      &trans      &trans      &trans
-&kp LEFT_GUI  &to 3       &trans              &trans              &trans         &kp LG(SPACE)  &trans    &trans  &kp LG(SPACE)  &trans      &trans      &trans      &to 3       &kp LEFT_GUI
+&none         &none  &to 3               &to 3               &to 3          &none                            &none          &to 0  &to 1                &to 2  &none  &none
+&none         &none  &none               &kp LG(UP_ARROW)    &none          &none                            &none          &none  &kp LG(L)            &none  &none  &none
+&none         &none  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &none                            &none          &none  &kp LG(V)            &none  &none  &none
+&none         &none  &none               &none               &none          &none          &trans    &trans  &none          &none  &kp LG(PRINTSCREEN)  &none  &none  &none
+&kp LEFT_GUI  &none  &none               &none               &none          &kp LG(SPACE)  &none     &none   &kp LG(SPACE)  &none  &none                &none  &none  &kp LEFT_GUI
             >;
         };
     };
